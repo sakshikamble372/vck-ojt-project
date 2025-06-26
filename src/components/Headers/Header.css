@@ -1,0 +1,200 @@
+/* Global Header Wrapper */
+.main-header {
+  background-color: #007BFF;
+  /* Primary blue background */
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  /* Space out college name and nav */
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  /* Make header sticky */
+  top: 0;
+  z-index: 999;
+  /* Ensure header is above other content */
+}
+
+.college-name {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.college-name a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.college-name a:hover {
+  color: #E0E0E0;
+}
+
+/* Desktop Navigation Styles (default) */
+.desktop-nav {
+  display: flex;
+  /* Show by default */
+  gap: 25px;
+  /* Space between links */
+  align-items: center;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 0;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #E0E0E0;
+  border-bottom: 2px solid #E0E0E0;
+}
+
+/* Primary Button (e.g., Apply Now) */
+.btn.primary-btn {
+  background-color: #28A745;
+  /* Green */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn.primary-btn:hover {
+  background-color: #218838;
+  /* Darker green */
+}
+
+/* Hamburger Menu Button (hidden by default on desktop) */
+.hamburger-menu {
+  display: none;
+  /* Hide on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  z-index: 1002;
+  /* Ensure it's above the drawer if needed */
+}
+
+.hamburger-icon {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: all 0.3s ease;
+}
+
+/* Drawer Navigation (hidden by default) */
+.drawer-nav {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  /* Start off-screen to the right */
+  width: 200px;
+  /* Width of the drawer */
+  height: 100%;
+  background-color: #F8F9FA;
+  /* Light background for drawer */
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  /* Slide-in animation */
+  z-index: 1001;
+  /* Above page content, below overlay */
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  /* Space for close button/header */
+}
+
+.drawer-nav.open {
+  right: 0;
+  /* Slide in when open */
+}
+
+.drawer-nav .nav-item {
+  color: #343A40;
+  /* Darker text for drawer links */
+  padding: 15px 20px;
+  border-bottom: 1px solid #E0E0E0;
+  width: 100%;
+  /* Full width links */
+  box-sizing: border-box;
+  /* Include padding in width */
+}
+
+.drawer-nav .nav-item:hover {
+  background-color: #E9ECEF;
+  color: #007BFF;
+  border-bottom: 1px solid #E0E0E0;
+  /* Reset border for hover if needed */
+}
+
+.drawer-nav .nav-item.btn.primary-btn {
+  /* margin: 50px; Space for button in drawer */
+
+  text-align: center;
+}
+
+/* Close button inside drawer */
+.close-drawer-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #343A40;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+/* Overlay when drawer is open */
+.drawer-overlay {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black */
+  z-index: 1000;
+  /* Below drawer, above page content */
+}
+
+.drawer-nav.open+.drawer-overlay {
+  display: block;
+  /* Show when drawer is open */
+}
+
+/* --- Media Queries for Mobile --- */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+    /* Hide desktop nav on mobile */
+  }
+
+  .hamburger-menu {
+    display: block;
+    /* Show hamburger on mobile */
+  }
+
+  .main-header {
+    justify-content: space-between;
+    /* Ensure name and hamburger are spaced */
+  }
+
+  .college-name {
+    font-size: 1.5em;
+    /* Adjust college name size on mobile */
+  }
+}

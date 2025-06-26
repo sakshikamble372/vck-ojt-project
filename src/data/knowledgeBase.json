@@ -1,0 +1,30 @@
+{
+  "greeting": {
+    "response": "Hello! Welcome to our Educational Organization. How can I assist you today?",
+    "examples": ["hi", "hello", "hey there", "greetings", "good morning", "good evening"]
+  },
+  "courses": {
+    "response": "We offer a wide range of courses including Web Development, Data Science, Digital Marketing, and UI/UX Design. Which one are you interested in?",
+    "examples": ["what courses do you offer", "list of courses", "available programs", "tell me about your education", "what can I learn", "courses available"]
+  },
+  "fees": {
+    "response": "Our course fees vary based on the program and duration. Please visit the 'Courses' section on our website or provide the course name for specific details.",
+    "examples": ["how much are the fees", "course cost", "tuition fees", "what's the price", "cost of a program", "enrollment cost"]
+  },
+  "admission": {
+    "response": "To apply for admission, please visit our 'Admissions' page, fill out the online application form, and submit the required documents. Our team will contact you shortly.",
+    "examples": ["how to apply", "admission process", "enrollment steps", "admission requirements", "how to get admitted", "apply for a course"]
+  },
+  "contact": {
+    "response": "You can reach us by phone at +91 12345 67890, or email us at info@example.edu. You can also visit our office during working hours.",
+    "examples": ["contact details", "phone number", "email address", "where are you located", "get in touch", "how to reach you"]
+  },
+  "thanks": {
+    "response": "You're welcome! Is there anything else I can help you with?",
+    "examples": ["thank you", "thanks", "appreciate it", "cheers"]
+  },
+  "default": {
+    "response": "I'm sorry, I couldn't understand your query. Could you please rephrase or ask about courses, fees, admission, or contact information?",
+    "examples": []
+  }
+}
