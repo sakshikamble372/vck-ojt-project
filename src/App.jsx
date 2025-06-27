@@ -6,13 +6,31 @@ import Footer from "./components/Footer/Footer";
 import ContactPage from "./pages/ContactPage";
 import "./styles/pages.css";
 import AboutPage from "./pages/AboutPage";
-import CoursesPage from "./pages/CoursesPage";
 import AdmissionsPage from "./pages/AdmissionsPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import CoursesPage from './pages/CoursesPage'
 import ChatbotComponent from "./components/Chatbot/ChatbotComponent";
 
+import { useState } from "react";
+import DeveloperInfoPopup from "./components/DevloperInfo/DeveloperInfoPopup";
+
 function App() {
-  return (
+  const [showPopup, setShowPopup] = useState(true);
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+  return ( 
+    <>
+    <div>
+        {/* Your main application content */}
+        <DeveloperInfoPopup
+          show={showPopup}
+          onClose={handleClosePopup}
+          studentName="Sakshi Sagar Kamble"
+          studentPhotoUrl="/images/sakshi.jpg" // Path to their photo
+          uniqueMessage="Learned so much during this OJT! This app showcases my independent coding and deployment skills"
+        />
+      </div>
     <Router>
       <div className="main-layout">
         <Header />
@@ -30,6 +48,8 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </>
   );
 }
 export default App;
+

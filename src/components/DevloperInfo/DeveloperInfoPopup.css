@@ -1,0 +1,69 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9000; /* Ensure it's on top of everything */
+}
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  max-width: 400px; /* Max width for larger screens */
+  width: 90%; /* Responsive width */
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+.student-photo {
+  width: 120px; /* Size of the photo */
+  height: 120px;
+  border-radius: 50%; /* Makes it round */
+  object-fit: cover; /* Ensures photo covers the area */
+  margin-bottom: 15px;
+  border: 3px solid #007BFF; /* Small border for emphasis */
+}
+.popup-title {
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+.student-name {
+  color: #007BFF; /* Highlight name */
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.unique-message {
+  color: #555;
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.ok-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+.ok-button:hover {
+  background-color: #0056B3;
+}
