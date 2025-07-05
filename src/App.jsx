@@ -13,7 +13,6 @@ import ChatbotComponent from "./components/Chatbot/ChatbotComponent";
 import { useState } from "react";
 import AboutPage from "./pages/AboutPage";
 import DeveloperInfoPopup from "./components/DevloperInfo/DeveloperInfoPopup";
-
 function App() {
   const [showPopup, setShowPopup] = useState(true);
   const handleClosePopup = () => {
