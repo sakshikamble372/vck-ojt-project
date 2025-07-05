@@ -11,7 +11,6 @@ import CoursesPage from './pages/CoursesPage'
 import ChatbotComponent from "./components/Chatbot/ChatbotComponent";
 
 import { useState } from "react";
-import DeveloperInfoPopup from "./components/DevloperInfo/DeveloperInfoPopup";
 import AboutPage from "./pages/AboutPage";
 
 function App() {
@@ -21,8 +20,7 @@ function App() {
   };
   return ( 
     <>
-    <div>
-        {/* Your main application content */}
+    {/* <div>
         <DeveloperInfoPopup
           show={showPopup}
           onClose={handleClosePopup}
@@ -30,7 +28,7 @@ function App() {
           studentPhotoUrl="/images/sakshi.jpg" // Path to their photo
           uniqueMessage="Learned so much during this OJT! This app showcases my independent coding and deployment skills"
         />
-      </div>
+      </div> */}
     <Router>
       <div className="main-layout">
         <Header />
