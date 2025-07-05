@@ -13,6 +13,7 @@ import ChatbotComponent from "./components/Chatbot/ChatbotComponent";
 import { useState } from "react";
 import AboutPage from "./pages/AboutPage";
 import DeveloperInfoPopup from "./components/DevloperInfo/DeveloperInfoPopup";
+
 function App() {
   const [showPopup, setShowPopup] = useState(true);
   const handleClosePopup = () => {
@@ -20,13 +21,12 @@ function App() {
   };
   return ( 
     <>
-         <div>
-        {/* Your main application content */}
+    <div>
         <DeveloperInfoPopup
           show={showPopup}
           onClose={handleClosePopup}
-          studentName="Saniya Mahesh Patil"
-          studentPhotoUrl="/images/saniya.jpg" // Path to their photo
+          studentName="Sakshi Sagar Kamble"
+          studentPhotoUrl="/images/sakshi.jpg" // Path to their photo
           uniqueMessage="Learned so much during this OJT! This app showcases my independent coding and deployment skills"
         />
       </div>
