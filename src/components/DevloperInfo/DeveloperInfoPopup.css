@@ -1,3 +1,4 @@
+/* popup-overlay.css or similar */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -36,7 +37,7 @@
   border-radius: 50%; /* Makes it round */
   object-fit: cover; /* Ensures photo covers the area */
   margin-bottom: 15px;
-  border: 3px solid #007BFF; /* Small border for emphasis */
+  border: 3px solid #007bff; /* Small border for emphasis */
 }
 .popup-title {
   color: #333;
@@ -44,7 +45,7 @@
   font-size: 1.1em;
 }
 .student-name {
-  color: #007BFF; /* Highlight name */
+  color: #007bff; /* Highlight name */
   font-size: 1.6em;
   font-weight: bold;
   margin-bottom: 15px;
@@ -56,7 +57,7 @@
   margin-bottom: 20px;
 }
 .ok-button {
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -65,5 +66,5 @@
   font-size: 1em;
 }
 .ok-button:hover {
-  background-color: #0056B3;
+  background-color: #0056b3;
 }

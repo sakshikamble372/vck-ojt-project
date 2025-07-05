@@ -12,6 +12,7 @@ import ChatbotComponent from "./components/Chatbot/ChatbotComponent";
 
 import { useState } from "react";
 import AboutPage from "./pages/AboutPage";
+import DeveloperInfoPopup from "./components/DevloperInfo/DeveloperInfoPopup";
 
 function App() {
   const [showPopup, setShowPopup] = useState(true);
@@ -20,15 +21,16 @@ function App() {
   };
   return ( 
     <>
-    {/* <div>
+         <div>
+        {/* Your main application content */}
         <DeveloperInfoPopup
           show={showPopup}
           onClose={handleClosePopup}
-          studentName="Sakshi Sagar Kamble"
-          studentPhotoUrl="/images/sakshi.jpg" // Path to their photo
+          studentName="Saniya Mahesh Patil"
+          studentPhotoUrl="/images/saniya.jpg" // Path to their photo
           uniqueMessage="Learned so much during this OJT! This app showcases my independent coding and deployment skills"
         />
-      </div> */}
+      </div>
     <Router>
       <div className="main-layout">
         <Header />

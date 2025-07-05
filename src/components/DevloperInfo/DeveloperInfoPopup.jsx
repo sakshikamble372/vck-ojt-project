@@ -18,4 +18,3 @@ function DeveloperInfoPopup({ show, onClose, studentName, studentPhotoUrl, uniqu
   );
 }
 export default DeveloperInfoPopup;
-
